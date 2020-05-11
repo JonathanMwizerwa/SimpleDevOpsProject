@@ -1,0 +1,9 @@
+---
+- hosts: dev_prod
+  become: yes
+
+  tasks:
+  - name: latest httpd installed
+    yum:
+      name: httpd
+      state: latest
